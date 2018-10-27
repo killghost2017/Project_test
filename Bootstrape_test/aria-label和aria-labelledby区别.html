@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        
+        body{padding: 20px;}
+    
+    </style>
+</head>
+<body>
+<form role="form">
+    <div class="form-group col-lg-3 form-horizontal">
+        <label for="idCard" class="control-label col-lg-5">身份证号：</label>
+        <div class="col-lg-7">
+            <input type="text" id="idCard1" class="form-control">1
+        </div>
+    </div>
+</form>
+<!-- 当想要的标签文本已在其他元素中存在时，可以使用aria-labelledby，并将其值为所有读取的元素的id。 -->
+<form role="form">
+    <div class="form-group col-lg-3 form-horizontal">
+        <label for="idCard" class="control-label col-lg-5" id="txt">身份证号：</label>
+        <div class="col-lg-7">
+            <input type="text" id="idCard2" class="form-control" aria-labelledby="txt">2
+        </div>
+    </div>
+</form>
+<!-- 我们没有给输入框设置label时，当其获得焦点时，屏幕阅读器会读出aria-label属性的值，aria-label不会在视觉上呈现效果。 -->
+<form role="form">
+    <div class="form-group col-lg-3 form-horizontal">
+        <label for="idCard" class="control-label col-lg-5" id="txt1"></label>
+        <div class="col-lg-7">
+            <input type="text" id="idCard3" class="form-control" aria-label="身份证号">3
+        </div>
+    </div>
+</form>
+
+
+
+
+<!-- <div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+        
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="选择您的职位">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">测试工程师</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">开发工程师</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">销售工程师</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">
+        
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-label="选择您的职位">
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">测试工程师</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">开发工程师</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">销售工程师</a>
+        </li>
+    </ul>
+</div> -->
+
+            
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap-3.3.7.js"></script>
+    <script>
+        $(function () {
+
+          });
+    </script>
+</body>
+</html>

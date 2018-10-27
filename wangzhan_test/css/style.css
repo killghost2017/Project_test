@@ -1,0 +1,13 @@
+.row{
+    margin-bottom: 1px;
+    border:1px black solid;
+}
+.navbar-default {
+    background-color: #ffffff !important;
+    border-color: #e7e7e7;
+  }
+@media (max-width:990px){
+    .navbar-toggle{
+        display: block !important;
+    }
+}
