@@ -6,7 +6,7 @@
     background-color: #ffffff !important;
     border-color: #e7e7e7;
   }
-@media (max-width:990px){
+@media (max-width:990px) and (min-width:765px){
     .navbar-toggle{
         display: block !important;
     }
