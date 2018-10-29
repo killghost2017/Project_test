@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <!-- data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放。也可以使用 $('.carousel').carousel() 替换-->
+                <div class="carousel slide" data-ride="carousel" data-interval="2000"  id="carousel-1">
+                    <!-- carousel-indicators 轮播图的控制点（圆形点）-->
+                    <ol class="carousel-indicators">
+                        <!-- data-slide-to 来向轮播传递一个原始滑动索引，data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数 -->
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                        <li data-target="#carousel-1" data-slide-to="3"></li>
+                        <li data-target="#carousel-1" data-slide-to="4"></li>
+
+                    </ol>
+                    <!-- carousel-inner 轮播图图片容器 -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./images/1.jpg" alt="广告栏图片1">
+                            <!-- carousel-caption 图片标题 -->
+                            <div class="carousel-caption">第一张</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/2.jpg" alt="广告栏图片2">
+                            <div class="carousel-caption">第二张</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/3.jpg" alt="广告栏图片3">
+                            <div class="carousel-caption">第三张</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/4.jpg" alt="广告栏图片4">
+                            <div class="carousel-caption">第四张</div>
+                        </div>
+                        <div class="item">
+                            <img src="./images/5.jpg" alt="广告栏图片5">
+                            <div class="carousel-caption">第五张</div>
+                        </div>
+                    </div>
+                    <!-- carousel-control 轮播图切换控制器（上、下张） data-slide 接受关键字 prev 或 next 用来切换图片-->
+                    <a href="#carousel-1" class="carousel-control left" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">上一张</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-1" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">下一张</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- data-interval 延迟时间 -->
+    <!-- data-pause 鼠标停留 暂停动画 -->
+    <!-- data-wrap  是否连续循环 -->
+    <!-- $('#identifier').on('slide.bs.carousel', function () {
+        // 图片过渡动画中执行事件
+    }) -->
+
+    <!-- $('#identifier').on('slid.bs.carousel', function () {
+        // 图片过渡动画完执行事件
+    }) -->
+
+
+
+
+
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap-3.3.7.js"></script>
+    <script>
+        $(function () {
+
+          });
+    </script>
+</body>
+</html>
