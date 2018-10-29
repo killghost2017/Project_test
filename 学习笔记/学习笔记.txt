@@ -6,8 +6,11 @@ https://blog.csdn.net/qq_23341529/article/details/79331519   Git安装（vscode）
 
 https://blog.csdn.net/lhb_11/article/details/77837078   Vscode中Git的使用
 
+https://www.cnblogs.com/xuanhun/p/6019038.html?utm_source=tuicool&utm_medium=referral           Visual Studio Code 使用Git进行版本控制
+
 https://blog.csdn.net/zyg1515330502/article/details/81112653   如何使用npm发布自己的包
 
 https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html  node.js的安装配置
 
 https://www.cnblogs.com/tizi/p/9723830.html     npm包管理工具在一般项目中的应用方法
+
