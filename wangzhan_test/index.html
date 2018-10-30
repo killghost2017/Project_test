@@ -17,40 +17,74 @@
 </head>
 
 <body>
+    <!-- 导航栏 -->
     <header id="daohang">
         <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
             <div class="container">
-                    <a href="#" class="navbar-brand">厦门惠德尔</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse_1">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-collapse_1">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link">网站首页</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品中心</a>
-                                <div class="dropdown-menu" aria-labelledby="navabarDropdown">
-                                    <a href="#" class="dropdown-item">热电阻</a>
-                                    <a href="#" class="dropdown-item">热电偶</a>
-                                    <a href="#" class="dropdown-divider"></a>
-                                    <a href="#" class="dropdown-item">双金属温度计</a>
-                                    <a href="#" class="dropdown-item">压力变送器</a>
-                                    <a href="#" class="dropdown-item">烟雾传感器</a>
-                                </div>                    
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">产品资讯</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">联系我们</a>
-                            </li>
-                        </ul>
-                    </div>
+                <a href="#" class="navbar-brand">厦门惠德尔</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse_1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapse_1">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">网站首页</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">产品中心</a>
+                            <div class="dropdown-menu" aria-labelledby="navabarDropdown">
+                                <a href="#" class="dropdown-item">热电阻</a>
+                                <a href="#" class="dropdown-item">热电偶</a>
+                                <a href="#" class="dropdown-divider"></a>
+                                <a href="#" class="dropdown-item">双金属温度计</a>
+                                <a href="#" class="dropdown-item">压力变送器</a>
+                                <a href="#" class="dropdown-item">烟雾传感器</a>
+                            </div>                    
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">产品资讯</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
+    <!-- 轮播图 -->
+    <section id="guanggao" class="container">
+        <div class="carousel slide" id="carousel_1" data-ride="carousel">
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#carousel_1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel_1" data-slide-to="1"></li>
+                <li data-target="#carousel_1" data-slide-to="2"></li>
+            </ul>
+            <!-- 轮播图 -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./images/1.jpg" alt="广告图片1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/2.jpg" alt="广告图片2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/3.jpg" alt="广告图片3">
+                </div>
+            </div>
+            <!-- 切换按钮 -->
+            <a class="carousel-control-prev" href="#carousel_1" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel_1" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+
 
 
 
