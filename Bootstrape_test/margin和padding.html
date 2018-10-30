@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body{
+            background-color: blue;
+        }
+        .box1{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+            /* 盒子的边框到盒子内元素的边框之间的距离叫padding */
+            padding: 100px;
+
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            /* 盒子的边框到里一个盒子的边框之间的距离叫margin */
+            margin-top: 50px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box1"> 
+        这是红和黄的左右距离叫内边距padding
+        <div class="box2">
+                这是黄和黑的上下距离叫外边距marin
+        </div>
+        <div class="box3"></div>
+    </div>
+
+
+
+    
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap-3.3.7.js"></script>
+    <script>
+        $(function () {
+
+          });
+    </script>
+</body>
+</html>
