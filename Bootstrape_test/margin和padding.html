@@ -8,39 +8,33 @@
     <link rel="stylesheet" href="./css/bootstrap-3.3.7.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-        body{
-            background-color: blue;
-        }
         .box1{
-            height: 500px;
-            width: 500px;
-            background-color: red;
-            /* 盒子的边框到盒子内元素的边框之间的距离叫padding */
-            padding: 100px;
-
+            height: 900px;
+            width: 900px;
+            border: 1px solid black;
+            background-color:red;
         }
         .box2{
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
+            margin: 100px;
+            border: 1px solid black;
+            padding: 100px;
+            background-color:green;
         }
         .box3{
-            width: 100px;
-            height: 100px;
-            background-color: black;
-            /* 盒子的边框到里一个盒子的边框之间的距离叫margin */
-            margin-top: 50px;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            background-color:blue;
         }
-    
     </style>
 </head>
 <body>
-    <div class="box1"> 
-        这是红和黄的左右距离叫内边距padding
-        <div class="box2">
-                这是黄和黑的上下距离叫外边距marin
+    <div class="box1">子类到父类元素的距离用margin(红色区域) 以box2为参考目标
+        <div class="box2">父类到子类元素的距离用padding(绿色区域) 以box2为参考目标
+            <div class="box3">
+                
+            </div>
         </div>
-        <div class="box3"></div>
     </div>
 
 

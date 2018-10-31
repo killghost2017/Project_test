@@ -6,7 +6,9 @@
     margin-bottom: 1px;
     border:1px black solid;
 }
-
+.col-6{
+    border: 1px black solid;
+}
 /* 导航栏 */
 #daohang{
     height: 80px;
@@ -16,11 +18,28 @@
 
 
 /* 广告轮播图 */
+#guanggao{
+    background-color: yellow;
+}
+.carousel-inner img{
+    width: 100%;
+}
+
+/* 公司标语 */
+#biaoyu .container{
+    height: 200px;
+}
+#biaoyu h5{
+    text-align: right
+}
+#biaoyu .col-4 .progress{
+    background-color: red;
+    float: right;
+    border-radius: 0 !important;
+}
 
 
 
-
-/* 公司口号 */
 /* 新闻版块 */
 /* 新闻列表 */
 /* 产品列表 */
