@@ -30,12 +30,56 @@
     height: 200px;
 }
 #biaoyu h5{
+    font-weight: 800;
     text-align: right
 }
 #biaoyu .col-4 .progress{
+    width: 10%;
+    height: 3px;
     background-color: red;
     float: right;
     border-radius: 0 !important;
+}
+
+#biaoyu .col-4 .box1 a{
+    text-decoration: none;
+}
+#biaoyu .col-4 .box1 {
+    top: 50%;
+    left: 40%;
+    width: 110px;
+    height: 35px;
+    border: 1px solid red;
+    position: relative;
+    transition: 0.5s;
+}
+#biaoyu .col-4 .box1 .box2 {
+    width: 100%;
+    height: 35px;
+    background: red;
+    display: block;
+    transition: 0.5s;
+}
+#biaoyu .col-4 .box1 a {
+    line-height: 35px;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 0;
+}
+
+#biaoyu .col-4 .box1:hover a {
+    color: red;
+}
+
+#biaoyu .col-4 .box1:hover {
+    width: 150px;
+    transition: 0.5s;
+}
+
+#biaoyu .col-4 .box1:hover .box2 {
+    width: 0;
+    transition: 0.5s;
 }
 
 

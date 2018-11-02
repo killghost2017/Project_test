@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+        /* transition-property 指定CSS属性的name，transition效果,
+           transition-duration 效果需要指定多少秒或毫秒才能完成,
+           transition-timing-function 效果的转速曲线, 
+           transition-delay 效果开始的时候 
+        transition: all 0 ease 0;*/
+        a{
+            text-decoration: none;
+        }
+        .box1 {
+            width: 110px;
+            height: 35px;
+            border: 1px solid red;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 35px;
+            background: red;
+            display: block;
+            transition: 0.5s;
+        }
+
+        .box1 a {
+            line-height: 35px;
+            color: #fff;
+            position: absolute;
+            left: 15px;
+            top: 0;
+        }
+
+        .box1:hover a {
+            color: red;
+        }
+
+        .box1:hover {
+            width: 150px;
+            transition: 0.5s;
+        }
+
+        .box1:hover .box2 {
+            width: 0;
+            transition: 0.5s;
+        }
+   
+    </style>
+
+
+</head>
+<body>
+    <div class="box1">
+        <span class="box2"></span>
+        <a href="#">查看更多</a>
+    </div>
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+        $(".box1").mouseenter(function () { 
+            $(".box1 a").html("查看更多&nbsp;&gt;&gt;");
+            console.log("1");
+         });
+        
+        $(".box1").mouseleave(function () { 
+            $(".box1 a").html("查看更多");
+            console.log("2");
+         });
+    
+    </script>
+
+</body>
+</html>

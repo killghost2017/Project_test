@@ -104,7 +104,12 @@
                 <div class="col-3">
                     <h4 style="margin-top:10px"><small>cedarho</small></h4>
                 </div>
-                <div class="col-4">第三</div>
+                <div class="col-4">
+                    <div class="box1">
+                        <span class="box2"></span>
+                        <a href="#">查看更多</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -123,7 +128,20 @@
     <script>
         $(function () {
 
+            $("#biaoyu .col-4 .box1").mouseenter(function () {
+                $(".box1 a").html("查看更多&nbsp;&gt;&gt;");
+                console.log("1");
+            });
+
+            $("#biaoyu .col-4 .box1").mouseleave(function () {
+                $(".box1 a").html("查看更多");
+                console.log("2");
+            });
         });
+
+
+
+        
     </script>
 
 </body>
