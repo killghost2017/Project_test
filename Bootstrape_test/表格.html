@@ -8,11 +8,95 @@
     <link rel="stylesheet" href="./css/bootstrap-4.1.3.css">
     <link rel="stylesheet" href="./css/style.css">
     <style>
-    
+        /* th,td{
+            padding: 10px;
+        } */
     
     </style>
 </head>
 <body>
+    <!--table-dark 黑色背景 table-striped 条纹表格  table-bordered 带边框表格 table-hover 鼠标停留灰色背景
+        thead-dark 表头背景为黑色的 thead-light 表头背景为灰色的 table-sm 缩小内边距  table-responsive  响应式表单-->
+    <table class="table .table-responsive-lg ">
+        <caption>用户信息表</caption>
+        <thead class="thead-dark">
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小明</td>
+                <td>男</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>小虎</td>
+                <td>男</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>小粒</td>
+                <td>女</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>小哦</td>
+                <td>男</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="table ">
+        <thead class="thead-light">
+            <tr>
+                <th>类名</th>
+                <th>含义</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-primary">
+                <td>table-primary</td>
+                <td>蓝色: 指定这是一个重要的操作</td>
+            </tr>
+            <tr class="table-success">
+                <td>table-success</td>
+                <td>绿色: 指定这是一个允许执行的操作</td>
+            </tr>
+            <tr class="table-danger">
+                <td>table-danger</td>
+                <td>红色: 指定这是可以危险的操作</td>
+            </tr>
+            <tr class="table-info">
+                <td>table-info</td>
+                <td>浅蓝色: 表示内容已变更</td>
+            </tr>
+            <tr class="table-warning">
+                <td>table-warning</td>
+                <td>橘色: 表示需要注意的操作</td>
+            </tr>
+            <tr class="table-active">
+                <td>table-active</td>
+                <td>灰色: 用于鼠标悬停效果</td>
+            </tr>
+            <tr class="table-secondary">
+                <td>table-secondary</td>
+                <td>灰色: 表示内容不怎么重要</td>
+            </tr>
+            <tr class="table-light">
+                <td>table-light</td>
+                <td>浅灰色，可以是表格行的背景</td>
+            </tr>
+            <tr class="table-dark">
+                <td>table-dark</td>
+                <td>深灰色，可以是表格行的背景</td>
+            </tr>
+        </tbody>
+    </table>
     
 
     <script src="./js/jquery-3.3.1.js"></script>
