@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.1.3.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .container{
+            background-color: red;
+            height: 30px;
+            border: 1px black solid;
+        }
+        .col-2 ,.col-10, .col-sm-2,.col-sm-10, .col-md-2,.col-md-10, .col-lg-2,.col-lg-10, .col-xl-2,.col-xl-10,.col {
+            border: 1px solid black;
+            height: 25px;
+            background-color: white;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">2</div>
+            <div class="col-10">超小设备 &lt;576px container宽度:None(auto) col-</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">2</div>
+            <div class="col-sm-10">平板 ≥576px container宽度:540px col-md-</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">2</div>
+            <div class="col-md-10">桌面显示器 ≥768px container宽度:720px col-md-</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-10">大桌面显示器 ≥992px container宽度:960px col-lg-</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2">2</div>
+            <div class="col-xl-10">超大桌面显示器 ≥1200px container宽度:1140px col-xl-</div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">平分宽度  col</div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap-4.1.3.js"></script>
+    <script>
+        $(function () {
+
+          });
+    </script>
+</body>
+</html>

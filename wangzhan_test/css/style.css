@@ -27,7 +27,7 @@
 
 /* 公司标语 */
 #biaoyu .container{
-    height: 200px;
+    /* height: 200px; */
 }
 #biaoyu h5{
     font-weight: 800;
