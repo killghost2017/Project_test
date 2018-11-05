@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        
+        .roll{
+            margin: 100px auto;
+            border: 1px solid black;
+        }
+        .roll ul{
+            width: 1260px;
+            list-style: none;
+            height: 220px;
+            overflow: hidden;
+        }
+        .roll li{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            float: left;
+        }
+    
+    </style>
+
+
+
+</head>
+<body>
+    <div class="roll" id="roll">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+
+    <script>
+       $(document).ready(function(){
+            setInterval(function(){ // 添加定时器，每1.5s进行转换
+                $("#roll").find("ul:first").animate({
+                    marginRight:"-40px" //每次移动的距离
+                },500,function(){ // 动画运动的时间
+                    //$(this)指的是ul对象，
+                    //ul复位之后把第一个元素和第二个元素插入
+                    //到ul的最后一个元素的位置
+                    // $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+                    $(this).find("li:first").appendTo(this);
+                });
+            },5000)
+        });    
+    </script>
+
+
+</body>
+</html>
