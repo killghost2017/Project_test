@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:10px;
+            padding: 0;
+        }
+        p{
+            height: 36px;
+            line-height: 36px;
+            font-size: 30px;
+            background-color: gray;
+        }
+        button{
+            padding: 2px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <p>事件描述：</p>
+    </div>
+
+    <button id="btn1">click单击</button>
+    <button id="btn2">dblclick双击</button>
+    <button id="btn3">mouseenter停留</button>
+    <button id="btn4">mouseleave离开</button>
+    <button id="btn5">mousedown停留点击</button>
+    <button id="btn6">mouseup点击松开</button>
+    <button id="btn7">hover停留和离开个触发事件</button>
+    <br>
+    <input type="text" id="ipt1">
+    <br>
+    键盘事件：<input type="text" id="ipt2">
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+
+    <script>
+        $("#btn1").click(function(){
+            $("p").text("事件描述：当单击元素时，会发生 dblclick 事件！");
+        });
+        
+        $("#btn2").dblclick(function(){
+            $("p").text("事件描述：当双击元素时，会发生 dblclick 事件！");
+        });
+        $("#btn3").mouseenter(function(){
+            $("p").text("事件描述：当鼠标指针穿过元素时，会发生 mouseenter 事件！");
+        });
+        $("#btn4").mouseleave(function(){
+            $("p").text("事件描述：当鼠标指针离开元素时，会发生 mouseleave 事件！");
+        });
+        $("#btn5").mousedown(function(){
+            $("p").text("事件描述：当鼠标指针移动到元素上方，并按下鼠标按键时，会发生 mousedown 事件！");
+        });
+        $("#btn6").mouseup(function(){
+            $("p").text("事件描述：当在元素上松开鼠标按钮时，会发生 mouseup 事件！");
+        });
+        $("#btn7").hover(function(){
+            $("p").text("事件描述：当鼠标移动到元素上时，会触发指定的第一个函数(mouseenter)");
+        },function(){
+            $("p").text("事件描述：当鼠标移出这个元素时，会触发指定的第二个函数(mouseleave)");
+        });
+        $("#ipt1").focus(function(){
+            $("#ipt1").val("focus获取焦点");
+        });
+        $("#ipt1").blur(function(){
+            $("#ipt1").val("blur失去焦点");
+        });
+
+        $("#ipt2").keydown(function(){
+            $("#ipt2").val("键盘按下");
+        });
+        $("#ipt2").keyup(function(){
+            $("#ipt2").val("键盘抬起");
+        });
+
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -17,66 +17,42 @@
 
 </head>
 <body>
-    <div id="num">计数：0</div>
+    <div id="num">计数：0S</div>
     <button onclick="star()">开始</button>
     <button onclick="stop()">暂停</button>
     <button onclick="reset()">重置</button>
-
-
-
-
-
-
-
-<!-- <div id="one">
-</div>
-<script type="text/javascript">
-    var one = document.getElementById("one");
-    var i = 0;
-    var dt = setInterval(function () {
-        one.innerText = i;
-        i++;
-    }, 100);
-
-    function stop() {
-        clearInterval(dt);
-    }
-
-    function star() {
-        dt = setInterval(function () {
-            one.innerText = i;
-            i++;
-        }, 100);
-    }
-</script>
-<input type="button" onclick="stop()" value="停止" />
-<input type="button" onclick="star()" value="开始" /> -->
-
-
-
-
+    <button onclick="count()">计数</button>
+    <div id="count"></div>
     <script src="./js/jquery-3.3.1.js"></script>
 
     <script>
-        var i = 0;        
+        var i = 0;
+        var time ="";
+        var n = 0;
+        function count(){
+            n++;
+            $("#count").append("<br>第"+n+"个计数："+(i-1)+"S");               
+        }
         function star(){
-            dt = setInterval(function(){
-            $("#num").text("计数："+i);
+            clearInterval(time);
+            time = setInterval(function(){
+            $("#num").text("计数："+i+"S");
             i++;
         },1000);
         }
 
         function stop(){
-            clearInterval(dt);
+            clearInterval(time);  
         }
 
         function reset(){
-            
+            clearInterval(time);
+            i = 0;
+            $("#num").text("计数："+i+"S");            
         }
-        var dt = setInterval(function(){
-            $("#num").text("计数："+i);
-            i++;
-        },1000);
+        
+ 
+
     </script>
 
 </body>
