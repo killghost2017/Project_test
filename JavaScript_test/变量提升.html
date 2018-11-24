@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+
+            // 变量提升
+            x = 5;
+            console.log(x);
+            console.log(typeof (x));
+
+            // 函数提示
+            fn1(); // -> "函数声明"
+            function fn1() {
+                console.log("函数声明")
+            }
+            // fn2() // -> "fn2 is not a function"
+            var fn2 = function () {
+                console.log("函数表达式")
+            }
+            fn2();
+
+            // 重复声明
+            var a = 10;
+            var a = 100;
+            console.log(a); // -> 100
+
+            function fn() {
+                return "第一个fn函数"
+            }
+
+            function fn() {
+                return "第二个fn函数"
+            }
+            console.log(fn()) // -> "第二个fn函数"
+
+            // 特殊情况
+            // 1、在块级作用域中（如if，for），var声明变量function定义函数的时候，他们都是只声明但还未初始化值。
+            // 2、return语句下面的语句也是会提升的，变量是只提前声明，函数是声明跟初始化值一起完成。
+            // 3、return本身这条语句不会提升。
+            // 4、自执行函数不会提升。
+            // 5、回调函数不会提升。
+            var a = 1;
+
+            function b() {
+                a = 10;
+                return;
+
+                function a() {}
+            }
+            b();
+            console.log(a);
+
+            function foo() {
+                function bar() {
+                    return 3;
+                }
+                console.log(bar());
+                return bar();
+                
+                function bar() {
+                    return 8;
+                }
+            }
+            console.log(foo());
+
+
+        });
+    </script>
+</body>
+
+</html>
