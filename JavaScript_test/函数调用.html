@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,88 @@
     <title>Document</title>
 
     <style>
-        
+
     </style>
 
 </head>
+
 <body>
-    
 
 
 
-    
+
+
     <script src="./js/jquery-3.3.1.js"></script>
+
     <script>
-        $(function () { 
-            
-         });
+        // 一般而言，在Javascript中，this指向函数执行时的当前对象。
+        // 注意 this 是保留关键字，你不能修改 this 的值
+
+        //    全局对象
+        function myfunction() {
+            // 函数作为全局对象调用，会使 this 的值成为全局对象。使用 window 对象作为一个变量容易造成程序崩溃。
+            return this;
+        }
+        console.log(myfunction());
+
+        // 作为一个函数调用
+        // 全局变量，方法或函数容易造成命名冲突的bug。
+        function myfunction1(a, b) {
+            return a * b;
+        }
+        console.log(myfunction1(2, 6));
+
+        // 函数作为方法调用
+        var myobject = {
+            a: "Jim",
+            b: "Bob",
+            myfunction2() {
+                // alert(this);
+                return this.a + "  " + this.b;
+                // 函数作为对象方法调用，会使得 this 的值成为对象本身
+                // return this;//this 的值为 myObject 对象
+            }
+        }
+        console.log(myobject.myfunction2());
+
+        //使用构造函数调用函数
+        //构造函数
+        function myfunction3(a, b) {
+            // alert(this);
+            this.firstNum = a;
+            this.lastNum = b;
+        }
+        var x = new myfunction3(5, 8);
+        console.log(x.lastNum);
+
+        // 作为函数方法调用函数
+        function myfunction4(a, b) {
+            return a - b;
+        }
+        // 两个方法都使用了对象本身作为第一个参数。 
+        // 区别在于第二个参数： apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，
+        //                    call则作为call的参数传入（从第二个参数开始）
+        myArray = [10, 5];
+        var myObject = myfunction4.apply(myObject, myArray);
+        console.log(myObject);
+        myObject = myfunction4.call(myObject, 10, 8);
+        console.log(myObject);
+
+        //扩展
+        var myObject1, myArray1;
+        myObject1 = {
+            name: "hahaha ",
+            hsk: "en"
+        };
+        myArray1 = [10, 2]
+        function myfunction5(a, b) {
+            alert(this);
+            return this.name + this.hsk;
+        }
         
+        myObject1 = myfunction5.apply(myObject1, myArray1);
+        console.log(myObject1);
     </script>
 </body>
+
 </html>
