@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-4.1.3.css">
+    <style>
+    a{
+        margin: 100px;
+    }
+    </style>
+</head>
+<body>
+    <a href="#" data-toggle="popover" title="标题" data-content="内容">弹出框</a>
+
+    <a href="#" data-toggle="popover" title="方向" data-content="向下" data-placement="bottom">弹出框</a>
+
+    <a href="#" data-toggle="popover" title="关闭" data-content="点击其他地方关闭" data-trigger="focus">弹出框</a>
+    
+    <a href="#" data-toggle="popover" title="显示" data-content="停留显示" data-trigger="hover">弹出框</a>
+
+    
+    
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/popper-1.14.4.js"></script>
+    <script src="js/bootstrap-4.1.3.js"></script>
+    <script src="js/function.js"></script>
+
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+       
+        
+    </script>
+</body>
+</html>

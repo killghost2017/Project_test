@@ -64,8 +64,19 @@
     <script src="./js/bootstrap-4.1.3.js"></script>
 
     <script>
-      
-    
+    $(document).ready(function(){
+            setInterval(function(){ // 添加定时器，每1.5s进行转换
+                $("#roll").find("ul:first").animate({
+                    marginRight:"-40px" //每次移动的距离
+                },500,function(){ // 动画运动的时间
+                    //$(this)指的是ul对象，
+                    //ul复位之后把第一个元素和第二个元素插入
+                    // $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+                    //到ul的最后一个元素的位置                    
+                    $(this).find("li:first").appendTo(this);
+                });
+            },5000)
+        });
     </script>
 
 
