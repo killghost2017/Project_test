@@ -18,7 +18,14 @@ https://blog.csdn.net/mayfla/article/details/78942589  VS code版本控制工具Git和S
 
 https://www.cnblogs.com/codingbylch/p/9604009.html VSCode和VUE的初始安装及简单使用入门
 
+https://www.jianshu.com/p/e7bb97218946    知道这20个正则表达式，能让你少写1,000行代码
+
 https://www.cnblogs.com/penghuwan/p/6973702.html  【npm】利用npm安装/删除/发布/更新/撤销发布包
 
 https://blog.csdn.net/qq_25502269/article/details/79346545    npm包管理工具的安装及配置使用
 
+https://www.cnblogs.com/slly/p/7927760.html?tdsourcetag=s_pcqq_aiomsg  npm安装包调用
+
+https://juejin.im/post/5991f2975188257c666c64f4?tdsourcetag=s_pcqq_aiomsg   脚手架
+
+https://blog.csdn.net/qq_41448891/article/details/82825720   添加、删除、修改、回退、上传github
