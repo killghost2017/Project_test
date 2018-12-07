@@ -17,3 +17,8 @@ https://www.cnblogs.com/tizi/p/9723830.html     npm°ü¹ÜÀí¹¤¾ßÔÚÒ»°ãÏîÄ¿ÖĞµÄÓ¦ÓÃ·
 https://blog.csdn.net/mayfla/article/details/78942589  VS code°æ±¾¿ØÖÆ¹¤¾ßGitºÍSVN°²×°
 
 https://www.cnblogs.com/codingbylch/p/9604009.html VSCodeºÍVUEµÄ³õÊ¼°²×°¼°¼òµ¥Ê¹ÓÃÈëÃÅ
+
+https://www.cnblogs.com/penghuwan/p/6973702.html  ¡¾npm¡¿ÀûÓÃnpm°²×°/É¾³ı/·¢²¼/¸üĞÂ/³·Ïú·¢²¼°ü
+
+https://blog.csdn.net/qq_25502269/article/details/79346545    npm°ü¹ÜÀí¹¤¾ßµÄ°²×°¼°ÅäÖÃÊ¹ÓÃ
+
