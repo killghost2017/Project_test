@@ -15,3 +15,5 @@ https://jingyan.baidu.com/article/48b37f8dd141b41a646488bc.html  node.js的安装配
 https://www.cnblogs.com/tizi/p/9723830.html     npm包管理工具在一般项目中的应用方法
 
 https://blog.csdn.net/mayfla/article/details/78942589  VS code版本控制工具Git和SVN安装
+
+https://www.cnblogs.com/codingbylch/p/9604009.html VSCode和VUE的初始安装及简单使用入门
